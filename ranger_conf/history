@@ -1,0 +1,10 @@
+rm
+
+shell -w printf %c | xargs rm
+shell rm
+s
+delete
+open_with 
+shell subl esquema.txt
+delete esquema.txt
+open_with subl

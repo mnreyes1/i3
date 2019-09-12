@@ -36,7 +36,7 @@ bindsym $super+Shift+Return exec i3-sensible-terminal -e ranger
 bindsym $super+i exec nm-connection-editor
 bindsym $super+Shift+i exec i3-sensible-terminal -e nmtui
 # audio mixer
-bindsym $super+a exec alsamixer
+bindsym $super+a exec i3-sensible-terminal -e alsamixer
 
 # change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -44,8 +44,8 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Headphone toggle; exec amixer set Master toggle
 
 # change window brightness
-# bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-# bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'"; # increase screen brightness with notification
+bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'"; # decrease screen brightness with notification
 
 # music control
 bindsym XF86AudioNext exec mpc next
