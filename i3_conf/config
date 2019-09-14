@@ -37,6 +37,8 @@ bindsym $super+i exec nm-connection-editor
 bindsym $super+Shift+i exec i3-sensible-terminal -e nmtui
 # audio mixer
 bindsym $super+a exec i3-sensible-terminal -e alsamixer
+# tex
+bindsym $super+t exec texmaker
 
 # change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
