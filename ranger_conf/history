@@ -8,3 +8,5 @@ open_with
 shell subl esquema.txt
 delete esquema.txt
 open_with subl
+shell cd ~/.bash_scripts && ./save_scripts.sh
+shell cd ~/.bash_scripts && ./save_config_files.sh
