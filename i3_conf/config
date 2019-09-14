@@ -158,7 +158,8 @@ client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.background           #2f343f
 
 # exit mode
-mode "exit_mode" {
+set $exit_mode (s) shutdown, (r) reboot, (return) default mode (escape) default mode
+mode "$exit_mode" {
     bindsym s exec poweroff; mode "default"
     bindsym r exec reboot; mode "default"
    
@@ -166,4 +167,4 @@ mode "exit_mode" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $super+0 mode "exit_mode"
+bindsym $super+0 mode "$exit_mode"
