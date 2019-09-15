@@ -3,10 +3,11 @@ rm
 shell -w printf %c | xargs rm
 shell rm
 s
-delete
 open_with 
 shell subl esquema.txt
 delete esquema.txt
+shell cd ~/.bash_scripts && ./save_config_files.sh
+shell cd ~/.bash_scripts && ./enter_bdd.sh
 open_with subl
 shell cd ~/.bash_scripts && ./save_scripts.sh
-shell cd ~/.bash_scripts && ./save_config_files.sh
+delete

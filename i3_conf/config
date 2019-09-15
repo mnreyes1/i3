@@ -9,7 +9,7 @@ font pango: Noto Sans 8
 floating_modifier $super
 
 #autostart
-exec --no-startup-id hsetroot -cover ~/wallpapers/"$(ls wallpapers/ | shuf -n 1)"
+exec --no-startup-id hsetroot -cover ~/wallpapers/312323.jpg
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
 
@@ -46,8 +46,8 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Headphone toggle; exec amixer set Master toggle
 
 # change window brightness
-bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'"; # increase screen brightness with notification
+bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'"; # decrease screen brightness with notification
 
 # change wallpaper
 bindsym $super+Shift+w exec hsetroot -cover ~/wallpapers/"$(ls wallpapers/ | shuf -n 1)"
