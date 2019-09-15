@@ -46,8 +46,11 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Headphone toggle; exec amixer set Master toggle
 
 # change window brightness
-bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'brightness up'"; # increase screen brightness with notification
-bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'brightness down'"; # decrease screen brightness with notification
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
+bindsym $super+F12 exec light -A 5
+bindsym $super+F11 exec light -U 5
+
 
 # change wallpaper
 bindsym $super+Shift+w exec hsetroot -cover ~/wallpapers/"$(ls wallpapers/ | shuf -n 1)"
