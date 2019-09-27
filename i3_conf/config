@@ -43,7 +43,7 @@ bindsym $super+t exec texmaker
 # change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
-bindsym XF86AudioMute exec amixer set Headphone toggle; exec amixer set Master toggle
+bindsym XF86AudioMute exec amixer set Headphone toggle; exec amixer set Master toggle; exec amixer set Speaker toggle
 
 # change window brightness
 bindsym XF86MonBrightnessUp exec light -A 5
