@@ -1,5 +1,4 @@
 rm
-
 shell -w printf %c | xargs rm
 shell rm
 s
@@ -11,3 +10,6 @@ shell cd ~/.bash_scripts && ./enter_bdd.sh
 open_with subl
 shell cd ~/.bash_scripts && ./save_scripts.sh
 delete
+shell cd ~/.bash_scripts && ./pull_repos.sh
+mkdir Arqui
+
