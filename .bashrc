@@ -140,6 +140,8 @@ ex ()
 
 alias q='exit'
 
+alias chownall='sudo chown -R $USER:$USER .'
+
 alias du='sudo docker-compose up'
 alias dd='sudo docker-compose down'
 alias db='sudo docker-compose build'
@@ -153,3 +155,10 @@ alias ca='sudo chown -R $USER:$USER .'
 alias gs='git status'
 alias gb='git branch'
 alias gba='git branch --all'
+alias gc='git checkout'
+alias gcm='git commit -m'
+alias gf='git fetch'
+alias gfa='git fetch --all'
+alias gm='git merge'
+alias gp='git pull'
+alias gpa='git pull --all'
